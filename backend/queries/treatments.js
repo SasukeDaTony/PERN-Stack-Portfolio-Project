@@ -12,6 +12,8 @@ const getAllTreatments = async () => {
   }
 };
 
+//GET ONE FUNCTION
+
 module.exports = {
   getAllTreatments,
 };
