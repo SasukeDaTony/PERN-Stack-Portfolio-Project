@@ -8,10 +8,10 @@ DROP TABLE IF EXISTS treatments;
 CREATE TABLE treatments (
     id SERIAL PRIMARY KEY,
     name TEXT NOT NULL,
-    treatment_image TEXT,
+    treatment_image TEXT NOT NULL,
     category TEXT NOT NULL,
-    description TEXT,
+    description TEXT NOT NULL,
     price INTEGER NOT NULL DEFAULT 0,
-    therapist NOT NULL VARCHAR(255),
-    therapist_image TEXT,
-)
+    therapist VARCHAR(255) NOT NULL,
+    therapist_image TEXT NOT NULL
+);
