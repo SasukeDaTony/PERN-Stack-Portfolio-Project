@@ -20,4 +20,5 @@ app.get("*", (req, res) => {
   res.status(404).send("Page Not Found Error:404");
 });
 
+//EXPORT
 module.exports = app;
